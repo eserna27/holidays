@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def show
-    render locals: { chrismas_counter: ChristmasCounter.new }
+    render locals: { chritsmas_counter: ChristmasCounter.new }
   end
 end

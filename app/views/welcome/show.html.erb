@@ -4,9 +4,9 @@
   </div>
 </section>
 <section id="counter">
-  <div class="d-flex justify-content-center mt-5" data-controller="counter">
-    <div class="" data-counter="display">
-      <h2>Faltan <strong><%= "#{pluralize(chrismas_counter.days_until_christmas, "día")}" %></<strong> <%= image_tag("three-gifts.png") %></h2>
+  <div class="d-flex justify-content-center mt-5" data-controller="counter" data-date="<%= ChristmasCounter::DATE %>">
+    <div class="">
+      <h2>Faltan <strong data-counter-target="display">Calculando..</strong><%= image_tag("three-gifts.png") %></h2>
     </div>
   </div>
 </section>

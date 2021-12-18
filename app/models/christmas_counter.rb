@@ -1,9 +1,12 @@
 class ChristmasCounter
-  include Counter
-
   DATE = DateTime.new(2021, 12, 25)
 
-  def days_until_christmas
-    days_until(DATE)
+  def counter
+    diff_time.utc.strftime "%D - %H:%M:%S"
+  end
+  private
+
+  def diff_time
+    DateTime.at((DATE - DateTime.current).to_i.abs)
   end
 end
