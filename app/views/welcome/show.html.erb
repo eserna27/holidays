@@ -1,0 +1,12 @@
+<section id="title">
+  <div class="d-flex justify-content-center">
+    <h1 class="display-1">Navidad <%= image_tag("clous.png") %></h1>
+  </div>
+</section>
+<section id="counter">
+  <div class="d-flex justify-content-center mt-5" data-controller="counter" data-date="<%= ChristmasCounter::DATE %>">
+    <div class="">
+      <h2>Faltan <strong data-counter-target="display">Calculando..</strong><%= image_tag("three-gifts.png") %></h2>
+    </div>
+  </div>
+</section>
